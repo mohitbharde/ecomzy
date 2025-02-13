@@ -1,18 +1,26 @@
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import CartItem from "./CartItem";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Cart = () => {
   const { cart } = useSelector((state) => state);
   const [totalAmount, setTotalAmount] = useState(0);
+
+  useEffect(() => {
+    let total = 0;
+    for (let i = 0; i < cart.length; i++) {
+      total += Number(cart[i].price);
+    }
+    setTotalAmount(total.toFixed(2));
+  }, [cart]);
   return (
-    <div>
+    <div className="max-w-6xl mx-auto">
       {cart.length > 0 ? (
-        <div>
+        <div className="flex">
           <div>
             {cart.map((item, index) => {
-              return <CartItem key={item.id} item={item} itemIndex={index}/>
+              return <CartItem key={item.id} item={item} itemIndex={index} />;
             })}
           </div>
           <div>

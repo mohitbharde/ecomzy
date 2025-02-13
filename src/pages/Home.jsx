@@ -11,7 +11,7 @@ const Home = () => {
     setLoading(true);
     try {
       const res = await fetch(API_URL);
-      const data =await res.json();
+      const data = await res.json();
       setPosts(data);
     } catch (error) {
       console.log("something get wrong");
@@ -24,11 +24,13 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
+    <div className=" w-full h-lvh">
       {loading ? (
-        <Spinner></Spinner>
+        <div className="flex h-[100vh]  w-full  justify-center items-center">
+          <Spinner></Spinner>
+        </div>
       ) : posts.length > 0 ? (
-        <div className="grid grid-cols-4 max-w-6xl p-2 mx-auto space-y-10 space-x-10 min-h-[80vh] ">
+        <div className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-4 lg:max-w-6xl p-2 mx-auto space-y-10 space-x-10 min-h-[80vh] ">
           {posts.map((post) => (
             <Product key={post.id} post={post}></Product>
           ))}

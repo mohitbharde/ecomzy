@@ -1,5 +1,5 @@
 const Spinner = () => {
-    return ( <div class="custom-loader"></div> );
+    return (<div class="custom-loader" ></div>);
 }
- 
+
 export default Spinner;

@@ -7,9 +7,10 @@ import { store } from "./redux/Store";
 import { BrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+console.log("base url ->", "/ecomzy/")
 
 root.render(
-  <BrowserRouter >
+  <BrowserRouter basename={"/ecomzy"} >
     <Provider store={store}>
       <App />
     </Provider>

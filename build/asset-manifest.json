@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "https://mohitbharde.github.io/ecomzy/static/css/main.e48777d3.css",
+    "main.js": "https://mohitbharde.github.io/ecomzy/static/js/main.53e70bc2.js",
+    "index.html": "https://mohitbharde.github.io/ecomzy/index.html",
+    "main.e48777d3.css.map": "https://mohitbharde.github.io/ecomzy/static/css/main.e48777d3.css.map",
+    "main.53e70bc2.js.map": "https://mohitbharde.github.io/ecomzy/static/js/main.53e70bc2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e48777d3.css",
+    "static/js/main.53e70bc2.js"
+  ]
+}

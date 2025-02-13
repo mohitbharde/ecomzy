@@ -1,21 +1,20 @@
-import {FcDeleteDatabase} from "react-icons/fc";
+import { FcDeleteDatabase } from "react-icons/fc";
 import { remove } from "../redux/Slices/cartSlice";
 import { useDispatch } from "react-redux";
 
-const CartItem = ({item,itemIndex}) => {
+const CartItem = ({ item, itemIndex }) => {
+  const dispatch = useDispatch();
 
-  const dispatch=useDispatch();
-
-  const removeFromCart = ()=>{
-    dispatch(remove(item))
-  }
+  const removeFromCart = () => {
+    dispatch(remove(item));
+  };
   return (
-    <div>
+    <div className="flex ">
       <div>
-        <img src={item.image} />
+        <img src={item.image} alt="item_image" />
       </div>
       <div>
-        <h1>{item.title}</h1> 
+        <h1>{item.title}</h1>
         <h1>{item.description}</h1>
         <div>
           <p>{item.price}</p>
@@ -26,6 +25,6 @@ const CartItem = ({item,itemIndex}) => {
       </div>
     </div>
   );
-}
+};
 
 export default CartItem;
