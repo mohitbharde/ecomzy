@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "https://mohitbharde.github.io/ecomzy/static/css/main.e48777d3.css",
-    "main.js": "https://mohitbharde.github.io/ecomzy/static/js/main.53e70bc2.js",
+    "main.css": "https://mohitbharde.github.io/ecomzy/static/css/main.729599fc.css",
+    "main.js": "https://mohitbharde.github.io/ecomzy/static/js/main.82435a90.js",
     "index.html": "https://mohitbharde.github.io/ecomzy/index.html",
-    "main.e48777d3.css.map": "https://mohitbharde.github.io/ecomzy/static/css/main.e48777d3.css.map",
-    "main.53e70bc2.js.map": "https://mohitbharde.github.io/ecomzy/static/js/main.53e70bc2.js.map"
+    "main.729599fc.css.map": "https://mohitbharde.github.io/ecomzy/static/css/main.729599fc.css.map",
+    "main.82435a90.js.map": "https://mohitbharde.github.io/ecomzy/static/js/main.82435a90.js.map"
   },
   "entrypoints": [
-    "static/css/main.e48777d3.css",
-    "static/js/main.53e70bc2.js"
+    "static/css/main.729599fc.css",
+    "static/js/main.82435a90.js"
   ]
 }
