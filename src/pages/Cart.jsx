@@ -1,11 +1,15 @@
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import CartItem from "./CartItem";
+
 import { useEffect, useState } from "react";
+
+
 
 const Cart = () => {
   const { cart } = useSelector((state) => state);
   const [totalAmount, setTotalAmount] = useState(0);
+
 
   useEffect(() => {
     let total = 0;
@@ -49,10 +53,12 @@ const Cart = () => {
                   checkout now
                 </button>
               </div>
+
             </div>
           </div>
         </div>
       ) : (
+
         <div className="min-h-[80vh] flex flex-col items-center justify-center">
           <h1 className="text-gray-700 font-semibold text-xl mb-2">
             no data found
@@ -61,6 +67,7 @@ const Cart = () => {
             <button className="bg-green-600 hover:bg-purple-50 rounded-lg text-white transition duration-300 ease-linear mt-5 border-2 border-green-600 font-semibold hover:text-green-700 p-3 px-10 tracking-wider">
               Shop Now
             </button>
+
           </Link>
         </div>
       )}

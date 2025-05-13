@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Cart from "./pages/Cart";
 
 const App = () => {
+
   return (
     <div>
       <Navbar />
@@ -13,6 +14,8 @@ const App = () => {
       </Routes>
     </div>
   );
+
+
 };
 
 export default App;

@@ -1,3 +1,4 @@
+
 import { FcDeleteDatabase } from "react-icons/fc";
 import { remove } from "../redux/Slices/cartSlice";
 import { useDispatch } from "react-redux";
@@ -26,10 +27,13 @@ const CartItem = ({ item, itemIndex }) => {
           >
             <FcDeleteDatabase />
           </button>
+
         </div>
       </div>
     </div>
   );
+
 };
+
 
 export default CartItem;
